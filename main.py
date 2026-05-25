@@ -7,13 +7,12 @@ level=1
 #gained_exp=monster_exp
 exp=0
 #exp=exp+gained_exp
-level_score=200*level
+level_score=100*level
 if exp >= level_score:
     level=level+1
 attackdamage=5*level
 health=20+(5*level)
 defense=1
-
 
 
     
@@ -24,12 +23,15 @@ def character_creation():
     time.sleep(1)
     print(f"Karakteriniz oluşturuldu. Merhaba {name}!")
 def character_stats():
-    stats={
+    stat={
         "Karakter": {name},
-        stats:{
-
+        "stats":{
+            "Level: ":{level},
+            #"Next: ": gained_exp "/" level_score,
+            "AD: ":{attackdamage},
+            "Health: ":{health},
+            "Defense: ":{defense}
         }
-
     }
 i=0
 def secis(i):
@@ -52,7 +54,7 @@ questions=["Nasıl?","Ne?"]
 def choice(questions):
     for i, soru in enumerate(questions, start=1):
         print(f"[{i}] {soru}")
-    secis(i
+    secis(i)
 
 choice(questions)
 print(health)

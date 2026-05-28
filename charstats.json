@@ -1,9 +1,9 @@
 {
-    "Karakter": "Enes",
+    "Karakter": "r",
     "stats": {
         "Level": 1,
-        "EXP": 20,
-        "Next": "20 / 100",
+        "Total Exp": 25,
+        "Next": "25 / 100",
         "AD": 5,
         "Health": "21.25 / 25",
         "Defense": 1.3333333333333333

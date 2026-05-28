@@ -14,13 +14,6 @@ Karakterini oluştur, canavarlarla savaş, seviye atla ve güçlen. Her savaş s
 **Oyunu başlat:**
 
 ```bash
-# 1. Repoyu klonla
-git clone https://github.com/diegobrando3/SunderedSky
-
-# 2. Klasöre gir
-cd kufur-makinesi
-
-# 3. Çalıştır
 python main.py
 ```
 

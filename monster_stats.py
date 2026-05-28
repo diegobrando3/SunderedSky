@@ -1,5 +1,11 @@
 import random
 import os
+import time
+def slow_print(text, delay=0.04):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+    print()
 
 
 takedown=["yere yığıldı!","kaçmaya çalışırken taşa takıldı. Öldü..","gözlerindeki ışık yavaşça söndü.","havalı bir ölüm pozu vermeye çalıştı.",
@@ -33,7 +39,7 @@ class Monster:
             if self.hp <= 0:
                 self.is_alive = False
                 clear_screen()
-                print(f" {self.name} {random.choice(takedown)}")
+                slow_print(f" {self.name} {random.choice(takedown)}")
     def __str__(self):
         return self.status_report()
     def __repr__(self):
